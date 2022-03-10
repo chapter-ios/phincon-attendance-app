@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9595050527D9BE25005741CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9595050427D9BE25005741CA /* AppDelegate.swift */; };
+		9595050727D9BE25005741CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9595050627D9BE25005741CA /* SceneDelegate.swift */; };
+		9595050C27D9BE25005741CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9595050A27D9BE25005741CA /* Main.storyboard */; };
+		9595050F27D9BE25005741CA /* phincon_attendance_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9595050D27D9BE25005741CA /* phincon_attendance_app.xcdatamodeld */; };
+		9595051127D9BE29005741CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9595051027D9BE29005741CA /* Assets.xcassets */; };
+		9595051427D9BE29005741CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9595051227D9BE29005741CA /* LaunchScreen.storyboard */; };
+		9595051F27D9BE2A005741CA /* phincon_attendance_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9595051E27D9BE2A005741CA /* phincon_attendance_appTests.swift */; };
+		9595052A27D9BE2A005741CA /* phincon_attendance_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9595052927D9BE2A005741CA /* phincon_attendance_appUITests.swift */; };
+		9595054227D9C2CB005741CA /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9595053C27D9C2CB005741CA /* OnBoardingViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9595051B27D9BE2A005741CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 959504F927D9BE25005741CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9595050027D9BE25005741CA;
+			remoteInfo = "phincon-attendance-app";
+		};
+		9595052627D9BE2A005741CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 959504F927D9BE25005741CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9595050027D9BE25005741CA;
+			remoteInfo = "phincon-attendance-app";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9595050127D9BE25005741CA /* phincon-attendance-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "phincon-attendance-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9595050427D9BE25005741CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9595050627D9BE25005741CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9595050B27D9BE25005741CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9595050E27D9BE25005741CA /* phincon_attendance_app.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = phincon_attendance_app.xcdatamodel; sourceTree = "<group>"; };
+		9595051027D9BE29005741CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9595051327D9BE29005741CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9595051527D9BE29005741CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9595051A27D9BE2A005741CA /* phincon-attendance-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "phincon-attendance-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9595051E27D9BE2A005741CA /* phincon_attendance_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = phincon_attendance_appTests.swift; sourceTree = "<group>"; };
+		9595052027D9BE2A005741CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9595052527D9BE2A005741CA /* phincon-attendance-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "phincon-attendance-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9595052927D9BE2A005741CA /* phincon_attendance_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = phincon_attendance_appUITests.swift; sourceTree = "<group>"; };
+		9595052B27D9BE2A005741CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9595053C27D9C2CB005741CA /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		959504FE27D9BE25005741CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9595051727D9BE2A005741CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9595052227D9BE2A005741CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		959504F827D9BE25005741CA = {
+			isa = PBXGroup;
+			children = (
+				9595050327D9BE25005741CA /* phincon-attendance-app */,
+				9595051D27D9BE2A005741CA /* phincon-attendance-appTests */,
+				9595052827D9BE2A005741CA /* phincon-attendance-appUITests */,
+				9595050227D9BE25005741CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9595050227D9BE25005741CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9595050127D9BE25005741CA /* phincon-attendance-app.app */,
+				9595051A27D9BE2A005741CA /* phincon-attendance-appTests.xctest */,
+				9595052527D9BE2A005741CA /* phincon-attendance-appUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9595050327D9BE25005741CA /* phincon-attendance-app */ = {
+			isa = PBXGroup;
+			children = (
+				9595054527D9C45B005741CA /* Storyboards */,
+				9595054427D9C448005741CA /* Scene */,
+				9595053727D9C2AF005741CA /* Onboarding */,
+				9595051027D9BE29005741CA /* Assets.xcassets */,
+				9595051527D9BE29005741CA /* Info.plist */,
+				9595050D27D9BE25005741CA /* phincon_attendance_app.xcdatamodeld */,
+			);
+			path = "phincon-attendance-app";
+			sourceTree = "<group>";
+		};
+		9595051D27D9BE2A005741CA /* phincon-attendance-appTests */ = {
+			isa = PBXGroup;
+			children = (
+				9595051E27D9BE2A005741CA /* phincon_attendance_appTests.swift */,
+				9595052027D9BE2A005741CA /* Info.plist */,
+			);
+			path = "phincon-attendance-appTests";
+			sourceTree = "<group>";
+		};
+		9595052827D9BE2A005741CA /* phincon-attendance-appUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9595052927D9BE2A005741CA /* phincon_attendance_appUITests.swift */,
+				9595052B27D9BE2A005741CA /* Info.plist */,
+			);
+			path = "phincon-attendance-appUITests";
+			sourceTree = "<group>";
+		};
+		9595053727D9C2AF005741CA /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				9595053C27D9C2CB005741CA /* OnBoardingViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		9595054427D9C448005741CA /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				9595050427D9BE25005741CA /* AppDelegate.swift */,
+				9595050627D9BE25005741CA /* SceneDelegate.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		9595054527D9C45B005741CA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9595050A27D9BE25005741CA /* Main.storyboard */,
+				9595051227D9BE29005741CA /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9595050027D9BE25005741CA /* phincon-attendance-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9595052E27D9BE2A005741CA /* Build configuration list for PBXNativeTarget "phincon-attendance-app" */;
+			buildPhases = (
+				959504FD27D9BE25005741CA /* Sources */,
+				959504FE27D9BE25005741CA /* Frameworks */,
+				959504FF27D9BE25005741CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "phincon-attendance-app";
+			productName = "phincon-attendance-app";
+			productReference = 9595050127D9BE25005741CA /* phincon-attendance-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9595051927D9BE2A005741CA /* phincon-attendance-appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9595053127D9BE2A005741CA /* Build configuration list for PBXNativeTarget "phincon-attendance-appTests" */;
+			buildPhases = (
+				9595051627D9BE2A005741CA /* Sources */,
+				9595051727D9BE2A005741CA /* Frameworks */,
+				9595051827D9BE2A005741CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9595051C27D9BE2A005741CA /* PBXTargetDependency */,
+			);
+			name = "phincon-attendance-appTests";
+			productName = "phincon-attendance-appTests";
+			productReference = 9595051A27D9BE2A005741CA /* phincon-attendance-appTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9595052427D9BE2A005741CA /* phincon-attendance-appUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9595053427D9BE2A005741CA /* Build configuration list for PBXNativeTarget "phincon-attendance-appUITests" */;
+			buildPhases = (
+				9595052127D9BE2A005741CA /* Sources */,
+				9595052227D9BE2A005741CA /* Frameworks */,
+				9595052327D9BE2A005741CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9595052727D9BE2A005741CA /* PBXTargetDependency */,
+			);
+			name = "phincon-attendance-appUITests";
+			productName = "phincon-attendance-appUITests";
+			productReference = 9595052527D9BE2A005741CA /* phincon-attendance-appUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		959504F927D9BE25005741CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					9595050027D9BE25005741CA = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					9595051927D9BE2A005741CA = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 9595050027D9BE25005741CA;
+					};
+					9595052427D9BE2A005741CA = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 9595050027D9BE25005741CA;
+					};
+				};
+			};
+			buildConfigurationList = 959504FC27D9BE25005741CA /* Build configuration list for PBXProject "phincon-attendance-app" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 959504F827D9BE25005741CA;
+			productRefGroup = 9595050227D9BE25005741CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9595050027D9BE25005741CA /* phincon-attendance-app */,
+				9595051927D9BE2A005741CA /* phincon-attendance-appTests */,
+				9595052427D9BE2A005741CA /* phincon-attendance-appUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		959504FF27D9BE25005741CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9595051427D9BE29005741CA /* LaunchScreen.storyboard in Resources */,
+				9595051127D9BE29005741CA /* Assets.xcassets in Resources */,
+				9595050C27D9BE25005741CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9595051827D9BE2A005741CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9595052327D9BE2A005741CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		959504FD27D9BE25005741CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9595050F27D9BE25005741CA /* phincon_attendance_app.xcdatamodeld in Sources */,
+				9595050527D9BE25005741CA /* AppDelegate.swift in Sources */,
+				9595054227D9C2CB005741CA /* OnBoardingViewController.swift in Sources */,
+				9595050727D9BE25005741CA /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9595051627D9BE2A005741CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9595051F27D9BE2A005741CA /* phincon_attendance_appTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9595052127D9BE2A005741CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9595052A27D9BE2A005741CA /* phincon_attendance_appUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9595051C27D9BE2A005741CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9595050027D9BE25005741CA /* phincon-attendance-app */;
+			targetProxy = 9595051B27D9BE2A005741CA /* PBXContainerItemProxy */;
+		};
+		9595052727D9BE2A005741CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9595050027D9BE25005741CA /* phincon-attendance-app */;
+			targetProxy = 9595052627D9BE2A005741CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9595050A27D9BE25005741CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9595050B27D9BE25005741CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9595051227D9BE29005741CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9595051327D9BE29005741CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9595052C27D9BE2A005741CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9595052D27D9BE2A005741CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9595052F27D9BE2A005741CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "phincon-attendance-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "satriya.phincon-attendance-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9595053027D9BE2A005741CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "phincon-attendance-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "satriya.phincon-attendance-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9595053227D9BE2A005741CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "phincon-attendance-appTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "satriya.phincon-attendance-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/phincon-attendance-app.app/phincon-attendance-app";
+			};
+			name = Debug;
+		};
+		9595053327D9BE2A005741CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "phincon-attendance-appTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "satriya.phincon-attendance-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/phincon-attendance-app.app/phincon-attendance-app";
+			};
+			name = Release;
+		};
+		9595053527D9BE2A005741CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "phincon-attendance-appUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "satriya.phincon-attendance-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "phincon-attendance-app";
+			};
+			name = Debug;
+		};
+		9595053627D9BE2A005741CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "phincon-attendance-appUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "satriya.phincon-attendance-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "phincon-attendance-app";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		959504FC27D9BE25005741CA /* Build configuration list for PBXProject "phincon-attendance-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9595052C27D9BE2A005741CA /* Debug */,
+				9595052D27D9BE2A005741CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9595052E27D9BE2A005741CA /* Build configuration list for PBXNativeTarget "phincon-attendance-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9595052F27D9BE2A005741CA /* Debug */,
+				9595053027D9BE2A005741CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9595053127D9BE2A005741CA /* Build configuration list for PBXNativeTarget "phincon-attendance-appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9595053227D9BE2A005741CA /* Debug */,
+				9595053327D9BE2A005741CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9595053427D9BE2A005741CA /* Build configuration list for PBXNativeTarget "phincon-attendance-appUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9595053527D9BE2A005741CA /* Debug */,
+				9595053627D9BE2A005741CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9595050D27D9BE25005741CA /* phincon_attendance_app.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9595050E27D9BE25005741CA /* phincon_attendance_app.xcdatamodel */,
+			);
+			currentVersion = 9595050E27D9BE25005741CA /* phincon_attendance_app.xcdatamodel */;
+			path = phincon_attendance_app.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 959504F927D9BE25005741CA /* Project object */;
+}
