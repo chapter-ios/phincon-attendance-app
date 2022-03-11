@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnboardingCollectionViewCell" id="gTV-IL-0wX" customClass="OnboardingCollectionViewCell" customModule="phincon_attendance_app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="220"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="220"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Twn-ZS-PPv">
+                        <rect key="frame" x="0.0" y="44" width="300" height="176"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digital Absensi" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5w0-7s-xaZ">
+                                <rect key="frame" x="8" y="8" width="284" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="KoI-KX-qWS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pengelolaan karyawan di era digital yang baik, menghasilkan karyawan terbaik pula, salah satunya absensi karyawan" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="pGr-Gz-16x">
+                                <rect key="frame" x="8" y="48" width="284" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5w0-7s-xaZ" firstAttribute="top" secondItem="Twn-ZS-PPv" secondAttribute="top" constant="8" id="9mB-4t-N6o"/>
+                            <constraint firstAttribute="trailing" secondItem="5w0-7s-xaZ" secondAttribute="trailing" constant="8" id="BXO-KB-WoJ"/>
+                            <constraint firstAttribute="trailing" secondItem="pGr-Gz-16x" secondAttribute="trailing" constant="8" id="CBY-tf-kVp"/>
+                            <constraint firstItem="pGr-Gz-16x" firstAttribute="leading" secondItem="Twn-ZS-PPv" secondAttribute="leading" constant="8" id="SJi-a5-6mz"/>
+                            <constraint firstAttribute="bottom" secondItem="pGr-Gz-16x" secondAttribute="bottom" constant="8" id="X9Y-rZ-ZzR"/>
+                            <constraint firstItem="5w0-7s-xaZ" firstAttribute="centerX" secondItem="Twn-ZS-PPv" secondAttribute="centerX" id="YTK-eH-J2R"/>
+                            <constraint firstItem="pGr-Gz-16x" firstAttribute="top" secondItem="5w0-7s-xaZ" secondAttribute="bottom" constant="16" id="ylh-14-iO5"/>
+                            <constraint firstItem="5w0-7s-xaZ" firstAttribute="leading" secondItem="Twn-ZS-PPv" secondAttribute="leading" constant="8" id="zKR-Nq-fmf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="leading" secondItem="Twn-ZS-PPv" secondAttribute="leading" id="0L9-SC-VZd"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="Twn-ZS-PPv" secondAttribute="trailing" id="ggI-wB-SzV"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="top" secondItem="Twn-ZS-PPv" secondAttribute="top" id="lHX-s7-gbl"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="Twn-ZS-PPv" secondAttribute="bottom" id="rOQ-aE-u6x"/>
+            </constraints>
+            <size key="customSize" width="299" height="214"/>
+            <connections>
+                <outlet property="lbOnBoardDesc" destination="pGr-Gz-16x" id="X4R-ZC-70B"/>
+                <outlet property="lbOnBoardTitle" destination="5w0-7s-xaZ" id="ebt-jo-6mD"/>
+            </connections>
+            <point key="canvasLocation" x="238.40579710144928" y="139.28571428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

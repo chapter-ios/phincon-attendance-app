@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36DC385C27DA553600EC4164 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DC385A27DA553600EC4164 /* OnboardingCollectionViewCell.swift */; };
+		36DC385D27DA553600EC4164 /* OnboardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36DC385B27DA553600EC4164 /* OnboardingCollectionViewCell.xib */; };
+		36DC385F27DA630600EC4164 /* OnBoardingModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DC385E27DA630600EC4164 /* OnBoardingModels.swift */; };
 		9595050527D9BE25005741CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9595050427D9BE25005741CA /* AppDelegate.swift */; };
 		9595050727D9BE25005741CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9595050627D9BE25005741CA /* SceneDelegate.swift */; };
 		9595050C27D9BE25005741CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9595050A27D9BE25005741CA /* Main.storyboard */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		36DC385A27DA553600EC4164 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		36DC385B27DA553600EC4164 /* OnboardingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCollectionViewCell.xib; sourceTree = "<group>"; };
+		36DC385E27DA630600EC4164 /* OnBoardingModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingModels.swift; sourceTree = "<group>"; };
 		9595050127D9BE25005741CA /* phincon-attendance-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "phincon-attendance-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9595050427D9BE25005741CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9595050627D9BE25005741CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +84,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36DC385227DA542100EC4164 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		36DC385327DA547D00EC4164 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				36DC385427DA548500EC4164 /* OnBoarding */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		36DC385427DA548500EC4164 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				36DC385A27DA553600EC4164 /* OnboardingCollectionViewCell.swift */,
+				36DC385927DA550400EC4164 /* Collections */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		36DC385927DA550400EC4164 /* Collections */ = {
+			isa = PBXGroup;
+			children = (
+				36DC385B27DA553600EC4164 /* OnboardingCollectionViewCell.xib */,
+			);
+			path = Collections;
+			sourceTree = "<group>";
+		};
 		959504F827D9BE25005741CA = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +139,8 @@
 		9595050327D9BE25005741CA /* phincon-attendance-app */ = {
 			isa = PBXGroup;
 			children = (
+				36DC385327DA547D00EC4164 /* Views */,
+				36DC385227DA542100EC4164 /* Services */,
 				9595054527D9C45B005741CA /* Storyboards */,
 				9595054427D9C448005741CA /* Scene */,
 				9595053727D9C2AF005741CA /* Onboarding */,
@@ -133,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				9595053C27D9C2CB005741CA /* OnBoardingViewController.swift */,
+				36DC385E27DA630600EC4164 /* OnBoardingModels.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -261,6 +302,7 @@
 				9595051427D9BE29005741CA /* LaunchScreen.storyboard in Resources */,
 				9595051127D9BE29005741CA /* Assets.xcassets in Resources */,
 				9595050C27D9BE25005741CA /* Main.storyboard in Resources */,
+				36DC385D27DA553600EC4164 /* OnboardingCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +331,8 @@
 				9595050527D9BE25005741CA /* AppDelegate.swift in Sources */,
 				9595054227D9C2CB005741CA /* OnBoardingViewController.swift in Sources */,
 				9595050727D9BE25005741CA /* SceneDelegate.swift in Sources */,
+				36DC385F27DA630600EC4164 /* OnBoardingModels.swift in Sources */,
+				36DC385C27DA553600EC4164 /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
