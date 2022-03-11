@@ -127,6 +127,10 @@ extension OnBoardingViewController: UICollectionViewDelegate, UICollectionViewDa
         
         pageControl.currentPage = currentPage
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
 }
 
 extension UIImageView{

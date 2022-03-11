@@ -28,7 +28,7 @@
                                         </connections>
                                     </pageControl>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="DsF-DV-uD6">
-                                        <rect key="frame" x="16" y="16" width="382" height="173.5"/>
+                                        <rect key="frame" x="16" y="16" width="382" height="169.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Nhw-sd-Kdh">
                                             <size key="itemSize" width="128" height="128"/>
@@ -66,7 +66,7 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="xVU-fW-DPt" firstAttribute="top" secondItem="DsF-DV-uD6" secondAttribute="bottom" id="5kB-2L-6HE"/>
+                                    <constraint firstItem="xVU-fW-DPt" firstAttribute="top" secondItem="DsF-DV-uD6" secondAttribute="bottom" constant="4" id="5kB-2L-6HE"/>
                                     <constraint firstItem="DsF-DV-uD6" firstAttribute="leading" secondItem="k9p-0j-SAE" secondAttribute="leading" constant="16" id="BRD-ak-1EV"/>
                                     <constraint firstItem="vqO-YI-rwe" firstAttribute="width" secondItem="852-SL-auG" secondAttribute="width" id="Eqx-ix-EaW"/>
                                     <constraint firstAttribute="width" secondItem="k9p-0j-SAE" secondAttribute="height" multiplier="5:4" id="FhX-o7-yzQ"/>
