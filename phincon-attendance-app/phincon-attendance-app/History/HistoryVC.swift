@@ -38,6 +38,7 @@ class HistoryVC: UIViewController {
         historyTableView.register(HistoryTableViewCell.nib(), forCellReuseIdentifier: HistoryTableViewCell.identifier)
         historyTableView.delegate = self
         historyTableView.dataSource = self
+        historyTableView.estimatedRowHeight = 72
         
         filterCollView.register(DayFilterCollViewCell.nib(), forCellWithReuseIdentifier: DayFilterCollViewCell.identifier)
         filterCollView.delegate = self
@@ -89,8 +90,9 @@ extension HistoryVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let tableViewHeight = tableView.frame.size.height
-        return tableViewHeight / 6.5
+        let tableViewHeight = tableView.frame.size.height / 6
+        let heightRatio = UIScreen.main.bounds.height / 736
+        return tableView.estimatedRowHeight * heightRatio
     }
 }
 

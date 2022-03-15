@@ -12,10 +12,23 @@ class DashboardVC: UIViewController {
     @IBOutlet var dashboardTableView: UITableView!
     @IBOutlet var checkInBtn: UIButton!
     @IBOutlet var notifBtn: UIButton!
+    @IBOutlet var circleBg: UIImageView!
 
     @IBOutlet var topCardView: UIView!
     
-    var isCheckOut = false
+    var isCheckOut: Bool = false {
+        didSet {
+            if isCheckOut {
+                checkInBtn.setTitle("CHECK OUT", for: .normal)
+                circleBg.tintColor = UIColor(red: 0.969, green: 0.71, blue: 0, alpha: 1)
+                dashboardTableView.reloadData()
+            } else {
+                checkInBtn.setTitle("CHECK IN", for: .normal)
+                circleBg.tintColor = UIColor(red: 0.066, green: 0.752, blue: 0.302, alpha: 1)
+                dashboardTableView.reloadData()
+            }
+        }
+    }
     var checkInLists: [DashboardModels] = []
     var checkOutLists: [DashboardModels] = []
 
@@ -33,15 +46,19 @@ class DashboardVC: UIViewController {
         dashboardTableView.separatorStyle = .none
         dashboardTableView.delegate = self
         dashboardTableView.dataSource = self
+        dashboardTableView.estimatedRowHeight = 72
         
-        checkInBtn.layer.cornerRadius = checkInBtn.frame.width / 2
-//        checkInBtn.layer.masksToBounds = true
-        checkInBtn.titleEdgeInsets = UIEdgeInsets(top: 8,left: 8,bottom: 8,right: 8)
-        checkInBtn.layer.shadowColor = UIColor.darkGray.cgColor
-        checkInBtn.layer.shadowOffset = CGSize.zero
-        checkInBtn.layer.shadowOpacity = 0.4
-        checkInBtn.layer.shadowRadius = 10.0
+        checkInBtn.titleLabel?.textAlignment = .center
+//        checkInBtn.titleEdgeInsets = UIEdgeInsets(top: 0,left: 4,bottom: 0,right: 4)
+        checkInBtn.titleLabel?.adjustsFontSizeToFitWidth = true
+        checkInBtn.titleLabel?.minimumScaleFactor = 0.5
+        isCheckOut = false
         
+        circleBg.layer.shadowColor = UIColor.lightGray.cgColor
+        circleBg.layer.shadowOffset = CGSize.zero
+        circleBg.layer.shadowOpacity = 0.4
+        circleBg.layer.shadowRadius = 10.0
+
         topCardView.layer.cornerRadius = 20
         topCardView.layer.shadowColor = UIColor.lightGray.cgColor
         topCardView.layer.shadowOffset = CGSize.zero
@@ -65,14 +82,8 @@ class DashboardVC: UIViewController {
     @IBAction func btnCheckPressed(_ sender: Any) {
         if isCheckOut {
             isCheckOut = false
-            checkInBtn.setTitle("CHECK IN", for: .normal)
-            checkInBtn.backgroundColor = UIColor(red: 0.066, green: 0.752, blue: 0.302, alpha: 1)
-            dashboardTableView.reloadData()
         } else {
             isCheckOut = true
-            checkInBtn.setTitle("CHECK OUT", for: .normal)
-            checkInBtn.backgroundColor = UIColor(red: 0.969, green: 0.71, blue: 0, alpha: 1)
-            dashboardTableView.reloadData()
         }
     }
 
@@ -110,7 +121,8 @@ extension DashboardVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let heightRatio = UIScreen.main.bounds.height / 736
         let tableViewHeight = tableView.frame.size.height
-        return tableViewHeight / 3.5
+        return tableView.estimatedRowHeight * heightRatio
     }
 }

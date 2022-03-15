@@ -18,26 +18,26 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y0h-wL-mGS">
-                        <rect key="frame" x="8" y="8" width="387" height="62"/>
+                        <rect key="frame" x="8" y="4" width="387" height="70"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jyR-Mu-XUv">
-                                <rect key="frame" x="8" y="8" width="46" height="46"/>
+                                <rect key="frame" x="8" y="8" width="54" height="54"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="jyR-Mu-XUv" secondAttribute="height" multiplier="1:1" id="L8b-sX-JBV"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="jOV-e7-nYv">
-                                <rect key="frame" x="70" y="12" width="301" height="38"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="jOV-e7-nYv">
+                                <rect key="frame" x="78" y="10" width="293" height="50"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="PT. Phincon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5o-jJ-3AD">
-                                        <rect key="frame" x="0.0" y="0.0" width="70" height="18"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="13"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="PT. Phincon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="t5o-jJ-3AD">
+                                        <rect key="frame" x="0.0" y="0.0" width="80.5" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Office. 88 @Kasablanka Office Tower 18th Floor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Prf-Y8-WwF">
-                                        <rect key="frame" x="0.0" y="22" width="255" height="16"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Office. 88 @Kasablanka Office Tower 18th Floor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Prf-Y8-WwF">
+                                        <rect key="frame" x="0.0" y="25.5" width="293" height="24.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -46,8 +46,8 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="jOV-e7-nYv" firstAttribute="bottom" secondItem="jyR-Mu-XUv" secondAttribute="bottom" constant="-4" id="4YR-0X-MzG"/>
-                            <constraint firstItem="jOV-e7-nYv" firstAttribute="top" secondItem="jyR-Mu-XUv" secondAttribute="top" constant="4" id="cOc-9U-mAd"/>
+                            <constraint firstItem="jOV-e7-nYv" firstAttribute="bottom" secondItem="jyR-Mu-XUv" secondAttribute="bottom" constant="-2" id="4YR-0X-MzG"/>
+                            <constraint firstItem="jOV-e7-nYv" firstAttribute="top" secondItem="jyR-Mu-XUv" secondAttribute="top" constant="2" id="cOc-9U-mAd"/>
                             <constraint firstAttribute="bottom" secondItem="jyR-Mu-XUv" secondAttribute="bottom" constant="8" id="eyd-rd-AGB"/>
                             <constraint firstItem="jyR-Mu-XUv" firstAttribute="top" secondItem="y0h-wL-mGS" secondAttribute="top" constant="8" id="hlg-jj-H30"/>
                             <constraint firstItem="jOV-e7-nYv" firstAttribute="leading" secondItem="jyR-Mu-XUv" secondAttribute="trailing" constant="16" id="mIt-bU-CZa"/>
@@ -58,10 +58,11 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="y0h-wL-mGS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="6BV-05-JmR"/>
+                    <constraint firstItem="y0h-wL-mGS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="6BV-05-JmR"/>
                     <constraint firstItem="y0h-wL-mGS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Jgb-Hn-hFp"/>
-                    <constraint firstAttribute="bottom" secondItem="y0h-wL-mGS" secondAttribute="bottom" constant="8" id="RvC-qe-BmQ"/>
+                    <constraint firstAttribute="bottom" secondItem="y0h-wL-mGS" secondAttribute="bottom" constant="4" id="RvC-qe-BmQ"/>
                     <constraint firstAttribute="trailing" secondItem="y0h-wL-mGS" secondAttribute="trailing" constant="8" id="Xz6-T4-uji"/>
+                    <constraint firstItem="y0h-wL-mGS" firstAttribute="height" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.794872" id="nM0-ZU-Vpy"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
