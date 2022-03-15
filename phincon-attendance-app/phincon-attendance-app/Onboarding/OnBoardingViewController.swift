@@ -17,10 +17,20 @@
 import UIKit
 
 class OnBoardingViewController: UIViewController {
+    @IBOutlet weak var view2: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view2.layer.cornerRadius = 21
+     
     }
     
+    @IBAction func loginPassword(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func loginRegister(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }
