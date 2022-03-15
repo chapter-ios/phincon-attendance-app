@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DayFilterCollViewCell" id="lbf-B3-C3C" customClass="DayFilterCollViewCell" customModule="phincon_attendance_app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="164" height="54"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="wnc-ih-qu0">
+                <rect key="frame" x="0.0" y="0.0" width="164" height="54"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sla-71-onK">
+                        <rect key="frame" x="4" y="4" width="156" height="46"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Days" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkL-66-wgC">
+                                <rect key="frame" x="32" y="4" width="92" height="38"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="13"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vkL-66-wgC" firstAttribute="top" secondItem="sla-71-onK" secondAttribute="top" constant="4" id="794-UN-r5M"/>
+                            <constraint firstAttribute="bottom" secondItem="vkL-66-wgC" secondAttribute="bottom" constant="4" id="NJD-Gi-ysc"/>
+                            <constraint firstItem="vkL-66-wgC" firstAttribute="centerX" secondItem="sla-71-onK" secondAttribute="centerX" id="TLY-4k-r4w"/>
+                            <constraint firstAttribute="trailing" secondItem="vkL-66-wgC" secondAttribute="trailing" constant="32" id="ZFW-KL-JFp"/>
+                            <constraint firstItem="vkL-66-wgC" firstAttribute="leading" secondItem="sla-71-onK" secondAttribute="leading" constant="32" id="qDr-GA-XC1"/>
+                            <constraint firstItem="vkL-66-wgC" firstAttribute="centerY" secondItem="sla-71-onK" secondAttribute="centerY" id="qjQ-Nm-6TO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sla-71-onK" firstAttribute="top" secondItem="wnc-ih-qu0" secondAttribute="top" constant="4" id="7MA-AX-ZKg"/>
+                    <constraint firstAttribute="bottom" secondItem="sla-71-onK" secondAttribute="bottom" constant="4" id="ROq-9a-KOm"/>
+                    <constraint firstAttribute="trailing" secondItem="sla-71-onK" secondAttribute="trailing" constant="4" id="VdY-wj-5Cs"/>
+                    <constraint firstItem="sla-71-onK" firstAttribute="leading" secondItem="wnc-ih-qu0" secondAttribute="leading" constant="4" id="ni1-86-LeS"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="207" height="91"/>
+            <connections>
+                <outlet property="cardView" destination="sla-71-onK" id="5z2-Gd-xi6"/>
+                <outlet property="filterLbl" destination="vkL-66-wgC" id="4L1-7r-Vwf"/>
+            </connections>
+            <point key="canvasLocation" x="-15.942028985507248" y="1.3392857142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

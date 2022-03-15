@@ -53,7 +53,6 @@ class OnBoardingViewController: UIViewController {
     }
     
     func SetupUI() {
-        currentPage = 0
         bottomCardView.layer.shadowColor = UIColor.lightGray.cgColor
         bottomCardView.layer.shadowOffset = CGSize.zero
         bottomCardView.layer.shadowOpacity = 0.2
@@ -69,16 +68,7 @@ class OnBoardingViewController: UIViewController {
         self.collView.register(OnboardingCollectionViewCell.nib(), forCellWithReuseIdentifier: OnboardingCollectionViewCell.identifier)
         collView.delegate = self
         collView.dataSource = self
-        
-        DispatchQueue.main.async {
-            if self.pageControl.currentPage == 0 {
-                print(0)
-            } else if self.pageControl.currentPage == 1 {
-                print(1)
-            } else if self.pageControl.currentPage == 2 {
-                print(2)
-            }
-        }
+        currentPage = 0
     }
     
     @IBAction func onClickbBtnSkip(_ sender: Any?) {
@@ -97,6 +87,14 @@ class OnBoardingViewController: UIViewController {
         frame.origin.y = 0
         currentPage = page!
         self.collView.scrollRectToVisible(frame, animated: true)
+    }
+    
+    @IBAction func loginAction(_ sender: Any?) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let dashboardVC = storyBoard.instantiateViewController(withIdentifier: "TabBarController")
+//        self.definesPresentationContext = true
+        dashboardVC.modalPresentationStyle = .fullScreen
+        self.present(dashboardVC, animated:true, completion:nil)
     }
     
 }

@@ -10,6 +10,17 @@
 		36DC385C27DA553600EC4164 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DC385A27DA553600EC4164 /* OnboardingCollectionViewCell.swift */; };
 		36DC385D27DA553600EC4164 /* OnboardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36DC385B27DA553600EC4164 /* OnboardingCollectionViewCell.xib */; };
 		36DC385F27DA630600EC4164 /* OnBoardingModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DC385E27DA630600EC4164 /* OnBoardingModels.swift */; };
+		36EE8BB527E02744006EB567 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EE8BB327E02744006EB567 /* HistoryTableViewCell.swift */; };
+		36EE8BB627E02744006EB567 /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36EE8BB427E02744006EB567 /* HistoryTableViewCell.xib */; };
+		36F0CE8427DF4C5D001469CC /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F0CE8327DF4C5D001469CC /* DashboardVC.swift */; };
+		36F0CE8827DF8126001469CC /* DashboardTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F0CE8627DF8126001469CC /* DashboardTableCell.swift */; };
+		36F0CE8927DF8126001469CC /* DashboardTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36F0CE8727DF8126001469CC /* DashboardTableCell.xib */; };
+		36F0CE8C27DF8ACB001469CC /* DashboardModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F0CE8B27DF8ACB001469CC /* DashboardModels.swift */; };
+		36F0CE9027DFA27B001469CC /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F0CE8F27DFA27B001469CC /* HistoryVC.swift */; };
+		36F0CE9227DFA28C001469CC /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F0CE9127DFA28C001469CC /* ProfileVC.swift */; };
+		36F0CE9627DFAAD5001469CC /* DayFilterCollViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F0CE9427DFAAD5001469CC /* DayFilterCollViewCell.swift */; };
+		36F0CE9727DFAAD5001469CC /* DayFilterCollViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36F0CE9527DFAAD5001469CC /* DayFilterCollViewCell.xib */; };
+		36F0CE9A27DFAC56001469CC /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F0CE9927DFAC56001469CC /* HistoryModel.swift */; };
 		9595050527D9BE25005741CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9595050427D9BE25005741CA /* AppDelegate.swift */; };
 		9595050727D9BE25005741CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9595050627D9BE25005741CA /* SceneDelegate.swift */; };
 		9595050C27D9BE25005741CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9595050A27D9BE25005741CA /* Main.storyboard */; };
@@ -42,6 +53,17 @@
 		36DC385A27DA553600EC4164 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		36DC385B27DA553600EC4164 /* OnboardingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCollectionViewCell.xib; sourceTree = "<group>"; };
 		36DC385E27DA630600EC4164 /* OnBoardingModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingModels.swift; sourceTree = "<group>"; };
+		36EE8BB327E02744006EB567 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		36EE8BB427E02744006EB567 /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
+		36F0CE8327DF4C5D001469CC /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		36F0CE8627DF8126001469CC /* DashboardTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableCell.swift; sourceTree = "<group>"; };
+		36F0CE8727DF8126001469CC /* DashboardTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardTableCell.xib; sourceTree = "<group>"; };
+		36F0CE8B27DF8ACB001469CC /* DashboardModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardModels.swift; sourceTree = "<group>"; };
+		36F0CE8F27DFA27B001469CC /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
+		36F0CE9127DFA28C001469CC /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		36F0CE9427DFAAD5001469CC /* DayFilterCollViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayFilterCollViewCell.swift; sourceTree = "<group>"; };
+		36F0CE9527DFAAD5001469CC /* DayFilterCollViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayFilterCollViewCell.xib; sourceTree = "<group>"; };
+		36F0CE9927DFAC56001469CC /* HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
 		9595050127D9BE25005741CA /* phincon-attendance-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "phincon-attendance-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9595050427D9BE25005741CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9595050627D9BE25005741CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +116,8 @@
 		36DC385327DA547D00EC4164 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				36F0CE9327DFAA6A001469CC /* History */,
+				36F0CE8527DF80A2001469CC /* Dashboard */,
 				36DC385427DA548500EC4164 /* OnBoarding */,
 			);
 			path = Views;
@@ -114,6 +138,68 @@
 				36DC385B27DA553600EC4164 /* OnboardingCollectionViewCell.xib */,
 			);
 			path = Collections;
+			sourceTree = "<group>";
+		};
+		36F0CE8227DF4C2A001469CC /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				36F0CE8327DF4C5D001469CC /* DashboardVC.swift */,
+				36F0CE8B27DF8ACB001469CC /* DashboardModels.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		36F0CE8527DF80A2001469CC /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				36F0CE8A27DF8131001469CC /* Cell */,
+				36F0CE8627DF8126001469CC /* DashboardTableCell.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		36F0CE8A27DF8131001469CC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				36F0CE8727DF8126001469CC /* DashboardTableCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		36F0CE8D27DFA245001469CC /* History */ = {
+			isa = PBXGroup;
+			children = (
+				36F0CE8F27DFA27B001469CC /* HistoryVC.swift */,
+				36F0CE9927DFAC56001469CC /* HistoryModel.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		36F0CE8E27DFA24D001469CC /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				36F0CE9127DFA28C001469CC /* ProfileVC.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		36F0CE9327DFAA6A001469CC /* History */ = {
+			isa = PBXGroup;
+			children = (
+				36F0CE9827DFAADA001469CC /* Cells */,
+				36F0CE9427DFAAD5001469CC /* DayFilterCollViewCell.swift */,
+				36EE8BB327E02744006EB567 /* HistoryTableViewCell.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		36F0CE9827DFAADA001469CC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				36EE8BB427E02744006EB567 /* HistoryTableViewCell.xib */,
+				36F0CE9527DFAAD5001469CC /* DayFilterCollViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		959504F827D9BE25005741CA = {
@@ -144,6 +230,9 @@
 				9595054527D9C45B005741CA /* Storyboards */,
 				9595054427D9C448005741CA /* Scene */,
 				9595053727D9C2AF005741CA /* Onboarding */,
+				36F0CE8227DF4C2A001469CC /* Dashboard */,
+				36F0CE8D27DFA245001469CC /* History */,
+				36F0CE8E27DFA24D001469CC /* Profile */,
 				9595051027D9BE29005741CA /* Assets.xcassets */,
 				9595051527D9BE29005741CA /* Info.plist */,
 				9595050D27D9BE25005741CA /* phincon_attendance_app.xcdatamodeld */,
@@ -299,9 +388,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36F0CE8927DF8126001469CC /* DashboardTableCell.xib in Resources */,
 				9595051427D9BE29005741CA /* LaunchScreen.storyboard in Resources */,
 				9595051127D9BE29005741CA /* Assets.xcassets in Resources */,
 				9595050C27D9BE25005741CA /* Main.storyboard in Resources */,
+				36F0CE9727DFAAD5001469CC /* DayFilterCollViewCell.xib in Resources */,
+				36EE8BB627E02744006EB567 /* HistoryTableViewCell.xib in Resources */,
 				36DC385D27DA553600EC4164 /* OnboardingCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,10 +420,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				9595050F27D9BE25005741CA /* phincon_attendance_app.xcdatamodeld in Sources */,
+				36F0CE9027DFA27B001469CC /* HistoryVC.swift in Sources */,
+				36EE8BB527E02744006EB567 /* HistoryTableViewCell.swift in Sources */,
 				9595050527D9BE25005741CA /* AppDelegate.swift in Sources */,
+				36F0CE8427DF4C5D001469CC /* DashboardVC.swift in Sources */,
+				36F0CE8827DF8126001469CC /* DashboardTableCell.swift in Sources */,
 				9595054227D9C2CB005741CA /* OnBoardingViewController.swift in Sources */,
+				36F0CE9A27DFAC56001469CC /* HistoryModel.swift in Sources */,
+				36F0CE8C27DF8ACB001469CC /* DashboardModels.swift in Sources */,
 				9595050727D9BE25005741CA /* SceneDelegate.swift in Sources */,
 				36DC385F27DA630600EC4164 /* OnBoardingModels.swift in Sources */,
+				36F0CE9227DFA28C001469CC /* ProfileVC.swift in Sources */,
+				36F0CE9627DFAAD5001469CC /* DayFilterCollViewCell.swift in Sources */,
 				36DC385C27DA553600EC4164 /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
